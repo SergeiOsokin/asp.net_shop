@@ -1,0 +1,9 @@
+﻿<!--шаблон для всех автомобилей-->
+    <h1>@Model.currentCategory</h1>
+    <div class="row mt-5 mb-2">
+    @{
+        foreach (Car car in Model.allCars) { // чтобы можно было обращаться к Model подключаем using в _ViewImports
+            @Html.Partial("AllCars", car); //@Html.Partial - для подлючения шаблона, параметры какой шаблон и что в него передавать
+        }
+    }
+    </div>

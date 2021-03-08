@@ -1,0 +1,11 @@
+﻿@import url('~/css/bootstrap.css');
+@import url('~/css/bootstrap-grid.css');
+@import url('~/css/bootstrap-reboot.css');
+@import url('~/css/bootstrap-utilities.css');
+
+
+
+.img-thumbnail {
+    height: 250px;
+    object-fit:cover;
+}

@@ -1,0 +1,26 @@
+﻿/* если будет ошибка 
+  Cannot authenticate using Kerberos.
+  Ensure Kerberos has been initialized on the client with 'kinit' and a Service Principal Name has been registered for the SQL Server
+  to allow Kerberos authentication.
+
+  то установить Trusted_Connection=False в строке ConnectionStrings
+
+*/
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=shop;Trusted_Connection=False;user=sa;Password=reallyStrongPwd123;"
+  }
+}
+
+/*{
+  "ConnectionStrings": {
+    "DefaultConnection": "DataSource=app.db"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}*/

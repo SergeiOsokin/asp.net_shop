@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Learn_C_sharp' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="JSON" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlserver" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Data\Models\" />
+    <Folder Include="Data\Interfaces\" />
+    <Folder Include="Data\mocks\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Cars\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="Data\Repository\" />
+    <Folder Include="Views\ShopCart\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Remove="obj\Debug\net5.0\Shop.AssemblyInfo.cs" />
+    <Compile Remove="obj\Debug\net5.0\Shop.RazorAssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="obj\Debug\net5.0\ref\Learn_C_sharp.dll" />
+    <None Remove="obj\Debug\net5.0\ref\Shop.dll" />
+    <None Remove="obj\Debug\net5.0\staticwebassets\Learn_C_sharp.StaticWebAssets.Manifest.cache" />
+    <None Remove="obj\Debug\net5.0\staticwebassets\Learn_C_sharp.StaticWebAssets.xml" />
+    <None Remove="obj\Debug\net5.0\staticwebassets\Shop.StaticWebAssets.Manifest.cache" />
+    <None Remove="obj\Debug\net5.0\staticwebassets\Shop.StaticWebAssets.xml" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.AssemblyInfoInputs.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.assets.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.csproj.CopyComplete" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.csproj.CoreCompileInputs.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.csproj.FileListAbsolute.txt" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.csprojAssemblyReference.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.dll" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.genruntimeconfig.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.pdb" />
+    <None Remove="obj\Debug\net5.0\Learn_C_sharp.RazorTargetAssemblyInfo.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.AssemblyInfoInputs.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.assets.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.csproj.CoreCompileInputs.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.csproj.FileListAbsolute.txt" />
+    <None Remove="obj\Debug\net5.0\Shop.dll" />
+    <None Remove="obj\Debug\net5.0\Shop.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="obj\Debug\net5.0\Shop.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.pdb" />
+    <None Remove="obj\Debug\net5.0\Shop.RazorAssemblyInfo.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.RazorCoreGenerate.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.TagHelpers.input.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.TagHelpers.output.cache" />
+    <None Remove="obj\Debug\net5.0\Shop.Views.dll" />
+    <None Remove="obj\Learn_C_sharp.csproj.nuget.dgspec.json" />
+    <None Remove="obj\Learn_C_sharp.csproj.nuget.g.props" />
+    <None Remove="obj\Learn_C_sharp.csproj.nuget.g.targets" />
+    <None Remove="obj\project.assets.json" />
+    <None Remove="obj\project.nuget.cache" />
+    <None Remove="obj\Shop.csproj.EntityFrameworkCore.targets" />
+    <None Remove="obj\Shop.csproj.nuget.dgspec.json" />
+    <None Remove="obj\Shop.csproj.nuget.g.props" />
+    <None Remove="obj\Shop.csproj.nuget.g.targets" />
+  </ItemGroup>
+</Project>
